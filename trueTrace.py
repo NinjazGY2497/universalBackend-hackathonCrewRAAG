@@ -6,7 +6,6 @@ import random
 
 trueTraceBP = Blueprint('trueTrace', __name__)
 HF_KEY = os.getenv('HF_KEY')
-print(HF_KEY)
 
 # API Endpoints
 TEXT_DETECT_MODEL = "https://router.huggingface.co/v1/chat/completions"
