@@ -7,7 +7,7 @@ load_dotenv()
 from trueTrace import trueTraceBP
 from ecoFuture import ecoFutureBP
 from terralytics import terralyticsBP
-from speciesScan.speciesScan import speciesScanBP
+from SpeciesScan.speciesScan import speciesScanBP
 
 app = Flask(__name__)
 # ALLOWED_ORIGINS = [

@@ -3,7 +3,7 @@ from flask import Blueprint, request, jsonify
 import json
 import os
 
-from speciesScan.schemas import AnalysisResponse
+from SpeciesScan.schemas import AnalysisResponse
 
 speciesScanBP = Blueprint('speciesScan', __name__)
 
