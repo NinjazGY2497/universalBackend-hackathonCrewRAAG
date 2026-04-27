@@ -7,6 +7,7 @@ load_dotenv()
 from trueTrace import trueTraceBP
 from ecoFuture import ecoFutureBP
 from terralytics import terralyticsBP
+from speciesScan.speciesScan import speciesScanBP
 
 app = Flask(__name__)
 # ALLOWED_ORIGINS = [
@@ -21,6 +22,7 @@ CORS(app)
 app.register_blueprint(trueTraceBP, url_prefix="/truetrace")
 app.register_blueprint(ecoFutureBP, url_prefix="/ecofuture")
 app.register_blueprint(terralyticsBP, url_prefix="/terralytics")
+app.register_blueprint(speciesScanBP, url_prefix="/speciesscan")
 
 if __name__ == "__main__":
     app.run(port=2497)
